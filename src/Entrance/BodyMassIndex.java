@@ -12,9 +12,9 @@ public class BodyMassIndex {
 
         // Get input from user
         Scanner input = new Scanner(System.in);
-        System.out.print("Please enter your height with meter :");
+        System.out.print("Please enter your height (in meters) :");
         height = input.nextFloat();
-        System.out.print("Please enter your weight with kg : ");
+        System.out.print("Please enter your weight (in kg) : ");
         weight = input.nextInt();
 
         // Body mass index formul
