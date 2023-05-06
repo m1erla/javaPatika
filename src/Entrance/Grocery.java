@@ -8,7 +8,7 @@ public class Grocery {
 
         // Defined Variables
         double
-                totalPrice,
+                totalAmount,
                 kgAubergine, kgPear, kgBanana,kgTomato,kgApple,
                 userAubergine,userPear,userBanana, userApple, userTomato ,
                 pear = 2.14, banana = 0.95, apple = 3.67, tomato = 1.11 , aubergine = 5.00;
@@ -32,7 +32,7 @@ public class Grocery {
         kgTomato = userTomato * tomato;
         kgBanana = userBanana * banana;
         kgApple = userApple * apple;
-        totalPrice = (kgApple + kgBanana + kgAubergine + kgPear + kgTomato);
+        totalAmount = (kgApple + kgBanana + kgAubergine + kgPear + kgTomato);
 
         // Output
         System.out.println("How many kilos a banana ? : " + (userBanana == 0 ? 0 : userBanana) + " kg ");
@@ -40,6 +40,6 @@ public class Grocery {
         System.out.println("How many kilos a apple ? : " + (userApple == 0 ? 0 : userApple) +  " kg ");
         System.out.println("How many kilos a tomato ? : " + (userTomato == 0 ? 0 : userTomato) +  " kg ");
         System.out.println("How many kilos a aubergine ? : " + (userAubergine == 0 ? 0 : userAubergine) + " kg ");
-        System.out.println("Total Price : " + totalPrice + " $");
+        System.out.println("Total Price : " + totalAmount + " $");
     }
 }
