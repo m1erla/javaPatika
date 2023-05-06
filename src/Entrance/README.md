@@ -25,9 +25,9 @@ Write a program in Java that prints the total amount of the products purchased f
 - Aubergine : 5,00 $
 
 ### Expected output
-How Many Kilos A Pear ? :0
-How Many Kilos A Apple ? :1
-How Many kilos A Tomato ? :1
-How Many kilos A Banana ? :2
-How Many kilos A Aubergine ? :3
-Total Amount : 21.68 $ 
+- How Many Kilos A Pear ? :0
+- How Many Kilos A Apple ? :1
+- How Many kilos A Tomato ? :1
+- How Many kilos A Banana ? :2
+- How Many kilos A Aubergine ? :3
+- Total Amount : 21.68 $ 
