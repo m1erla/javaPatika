@@ -78,3 +78,7 @@ It is found according to the remainder of the year of birth of the person in the
 - Date of Birth 12% = 10 ➜
 
 - Date of Birth 12% = 11 ➜ Sheep
+
+### Expected Output
+- Enter Your Birth Year : 1990
+- Your Chinese Zodiac Sign : Horse
