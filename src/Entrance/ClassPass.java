@@ -12,15 +12,15 @@ public class ClassPass {
 
         // Get input from user
         Scanner input = new Scanner(System.in);
-        System.out.print("Please Select your math note : ");
+        System.out.print("Please Enter your math note : ");
         math = input.nextInt();
-        System.out.print("Please Select your physics note : ");
+        System.out.print("Please Enter your physics note : ");
         physics = input.nextInt();
-        System.out.print("Please Select your chemistry note : ");
+        System.out.print("Please Enter your chemistry note : ");
         chemistry = input.nextInt();
-        System.out.print("Please Select your history note : ");
+        System.out.print("Please Enter your history note : ");
         history = input.nextInt();
-        System.out.print("Please Select your turkish note : ");
+        System.out.print("Please Enter your turkish note : ");
         turkish = input.nextInt();
 
 
