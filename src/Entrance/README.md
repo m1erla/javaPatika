@@ -31,3 +31,7 @@ Write a program in Java that prints the total amount of the products purchased f
 - How Many kilos A Banana ? :2
 - How Many kilos A Aubergine ? :3
 - Total Amount : 21.68 $ 
+
+### Homework Third - Basic Calculator Machine
+
+- Use switch-case in this proccess
