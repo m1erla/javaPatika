@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class FlightTicket {
     public static void main(String[] args) {
+        /****     FLIGHT TICKET CALCULATOR   ****/
+        
         // Defined Variables
         int km, age, typeOfTravel;
         double perDistance = 0.10,
