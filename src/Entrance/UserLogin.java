@@ -23,9 +23,7 @@ public class UserLogin {
         // Output
         if (userName.equals("java-Patika") && password.equals("java1234")) {
             System.out.println("Login Successful");
-        }else if (!password.equals("java1234") && !userName.equals("java-Patika")) {
-            System.out.println("User not found");
-        }   else if (!password.equals("java1234") && userName.equals("java-Patika")) {
+        } else if (!password.equals("java1234") && userName.equals("java-Patika")) {
                 // Check-in reset current password
                 System.out.println("You entered your password incorrectly. " +
                         "\nWould you like to reset your password?\n" +
@@ -47,6 +45,9 @@ public class UserLogin {
                     System.out.println("Logging out ");
                     System.exit(0);
             }
+        }else {
+            // If you not enter your user name and password correctly, you will receive this message!
+            System.out.println("user not found");
         }
     }
 }
