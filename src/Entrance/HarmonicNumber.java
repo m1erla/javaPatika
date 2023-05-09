@@ -2,7 +2,7 @@ package Entrance;
 
 import java.util.Scanner;
 
-public class Harmonic {
+public class HarmonicNumber {
     public static void main(String[] args) {
         // Defined Variables
         int number;
@@ -13,7 +13,7 @@ public class Harmonic {
         number = input.nextInt();
         // Loop
         for (int i = 1; i<=number; i++){
-            result += (1/i);
+            result += (1.0/i);
         }
         // Output
         System.out.println(result);
