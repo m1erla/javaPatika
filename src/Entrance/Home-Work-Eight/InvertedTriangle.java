@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class InvertedTriangle {
     public static void main(String[] args) {
+        /*** INVERTED TRIANGLE   ***/
         // Defined Variables
         int digitsNumber;
 
