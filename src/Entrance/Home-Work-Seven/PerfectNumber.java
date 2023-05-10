@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class PerfectNumber {
     public static void main(String[] args) {
-        /*** A PERFECT NUMBER APP  ***/
+        /*** A PERFECT NUMBER APP  
+         You can find out if the numbers you entered are perfect numbers
+        ***/
+        
         // Defined Variables
         int number, i = 1, total = 0;
 
