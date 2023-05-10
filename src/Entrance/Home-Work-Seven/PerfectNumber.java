@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PerfectNumber {
     public static void main(String[] args) {
+        /*** A PERFECT NUMBER APP  ***/
         // Defined Variables
         int number, i = 1, total = 0;
 
