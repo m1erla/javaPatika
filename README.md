@@ -4,7 +4,7 @@
 
 ## Home Works -- 
 ### Week 1 --
-- 1. Home Work --> [https://github.com/your_username/repo_name]([https://github.com/your_username/repo_name](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex))
+- 1. Home Work --> [https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex)
 - 2. Home Work -->
 - 3. Home Work -->
 - 4. Home Work -->
