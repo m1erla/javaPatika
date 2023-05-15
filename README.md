@@ -4,14 +4,14 @@
 
 ## Home Works -- 
 ### Week 1 --
-- 1. Home Work --> [https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex)
-- 2. Home Work -->
-- 3. Home Work -->
-- 4. Home Work -->
-- 5. Home Work -->
-- 6. Home Work -->
-- 7. Home Work -->
-- 8. Home Work -->
-- 9. Home Work -->
-- 10. Home Work -->
+- I- Home Work --> [BodyMassIndex](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/BodyMassIndex)
+- II- Home Work --> [Grocery](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Grocery)
+- III- Home Work --> [FlightTicket](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/FlightTicket)
+- IV- Home Work --> [ChineseZodiac](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/ChineseZodiac)
+- V- Home Work --> [LeapYear](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/LeapYear)
+- VI- Home Work --> [MinMaxValue](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Home-Work-Sixth)
+- VII- Home Work --> [PerfectNumber](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Home-Work-Seven)
+- VIII- Home Work --> [InvertedTriangle](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Home-Work-Eight)
+- IX- Home Work --> [PrimeNumber](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Home-Work-Nine)
+- X- Home Work --> [Fibonacci](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Home-Work-Ten)
 
