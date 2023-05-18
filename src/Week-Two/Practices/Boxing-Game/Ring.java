@@ -15,15 +15,21 @@ public class Ring {
         if (checkWeight()){
             while (fighterOne.health > 0 && fighterTwo.health > 0){
                 System.out.println("--------- NEW ROUND ---------");
-                fighterTwo.health = fighterOne.hit(fighterTwo);
-                if (isWin()){
-                    break;
+                if (whoAttackFirst() == true){
+                    this.fighterTwo.health = this.fighterOne.hit(this.fighterTwo);
+                    System.out.println(fighterTwo.name + " Reamining Health \t:" + fighterTwo.health);
+                    System.out.println(fighterOne.name + " Reamining Health \t:" + fighterOne.health);
+                    if (isWin()){
+                        break;
+                    }
+                }else {
+                    this.fighterOne.health = this.fighterTwo.hit(this.fighterOne);
+                    System.out.println(fighterOne.name + " Reamining Health \t:" + fighterOne.health);
+                    System.out.println(fighterTwo.name + " Reamining Health \t:" + fighterTwo.health);
+                    if (isWin()){
+                        break;
+                    }
                 }
-                fighterOne.health = fighterTwo.hit(fighterOne);
-                if (isWin()){
-                    break;
-                }
-                printScore();
             }
         }else {
             System.out.println("Athletes' weights do not match");
@@ -43,9 +49,11 @@ public class Ring {
         }
         return  false;
     }
-    public void printScore(){
-        System.out.println("----------------------");
-        System.out.println(fighterOne.name + " Reamining Health \t:" + fighterOne.health);
-        System.out.println(fighterTwo.name + " Reamining Health \t:" + fighterTwo.health);
+   public boolean whoAttackFirst(){
+        int number = (int)(Math.random()*10);
+        if (number <= 5){
+            return  true;
+        }
+        return  false;
     }
 }
