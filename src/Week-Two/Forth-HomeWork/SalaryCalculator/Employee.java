@@ -1,6 +1,7 @@
 package WeekTwo.SalaryCalculator;
 
 public class Employee {
+    
     // Defined Attributes
     String name;
     double salary;
@@ -9,6 +10,7 @@ public class Employee {
     double totalAmountSalary;
     double increaseSalary;
     double includeSalary;
+    
     // Create Instance
     public Employee(String name, double salary, int workHours, int hireYear){
          this.name = name;
@@ -19,6 +21,7 @@ public class Employee {
          this.increaseSalary = 0;
          this.includeSalary = 0;
     }
+    
     // Defined Methods
     public double tax(){
         if (salary > 1000 ){
