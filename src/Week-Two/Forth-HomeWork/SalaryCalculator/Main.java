@@ -6,6 +6,7 @@ public class Main {
         Employee worker = new Employee("Tom Hardy ", 5600, 45, 1992);
 
         worker.raiseSalary();
+        
         // Output Coming From Employee Class
         System.out.println(worker.toString());
     }
