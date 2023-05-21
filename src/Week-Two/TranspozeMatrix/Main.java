@@ -7,9 +7,9 @@ public class Main {
                         {1,2,3},
                         {4,5,6}
                           };
-        System.out.println("Before The Change");
+        System.out.println("Matrix : ");
         printArray(matrix);
-        System.out.println("After The Change");
+        System.out.println("Transpoze : ");
         Change(matrix);
     }
     // Created New Actions
