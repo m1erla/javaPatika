@@ -2,7 +2,7 @@ package Entrance;
 
 import java.util.Scanner;
 
-public class PerfectNumber {
+public class PerfectNumbers {
     public static void main(String[] args) {
         // Defined Variables
         int number, i = 1, total = 0;

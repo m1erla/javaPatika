@@ -1,6 +1,6 @@
 package Entrance;
 
-public class PrimeNumber {
+public class PrimeNumbers {
     public static void main(String[] args) {
         /*** PRIME NUMBER BETWEEN 1 - 100 ***/
         // Defined Variables

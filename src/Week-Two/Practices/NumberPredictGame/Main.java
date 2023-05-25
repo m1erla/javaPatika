@@ -1,4 +1,4 @@
-package WeekTwo.NumberPredictGame;
+package WeekTwo.NumberPredictGames;
 
 import java.util.Arrays;
 import java.util.Random;

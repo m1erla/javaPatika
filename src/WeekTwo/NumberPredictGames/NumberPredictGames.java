@@ -1,10 +1,10 @@
-package WeekTwo.NumberPredictGame;
+package WeekTwo.NumberPredictGames;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class NumberPredictGames {
     public static void main(String[] args) {
         Random passing = new Random();
         Scanner input = new Scanner(System.in);
