@@ -1,8 +1,8 @@
-package Entrance;
+package Entrance.HomeWorkTen;
 
 import java.util.Scanner;
 
-public class Fibonaccir {
+public class Fibonacci {
     public static void main(String[] args) {
         /*** FIBONACCI NUMBER ***/
         // Defined Variables

@@ -1,8 +1,8 @@
-package Entrance;
+package Entrance.HomeWorkEight;
 
 import java.util.Scanner;
 
-public class InvertedTriangler {
+public class InvertedTriangle {
     public static void main(String[] args) {
         /*** INVERTED TRIANGLE   ***/
         // Defined Variables
