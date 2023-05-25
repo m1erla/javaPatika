@@ -1,4 +1,4 @@
-package WeekTwo.PractiseBoxing;
+package WeekTwo.Practices.PractiseBoxing;
 
 public class Ring {
     Fighter fighterOne;

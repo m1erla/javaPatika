@@ -1,4 +1,4 @@
-package WeekTwo.PractiseDuplicate;
+package WeekTwo.Practices.PractiseDuplicate;
 
 public class Main {
     static boolean isFind(int[] arr, int value){

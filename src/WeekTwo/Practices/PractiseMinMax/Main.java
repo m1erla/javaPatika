@@ -1,4 +1,4 @@
-package WeekTwo.PractiseMinMax;
+package WeekTwo.Practices.PractiseMinMax;
 
 import java.util.Arrays;
 import java.util.Scanner;

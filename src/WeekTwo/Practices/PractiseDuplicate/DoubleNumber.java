@@ -1,4 +1,4 @@
-package WeekTwo.PractiseDuplicate;
+package WeekTwo.Practices.PractiseDuplicate;
 
 import java.util.Arrays;
 

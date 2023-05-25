@@ -1,4 +1,4 @@
-package WeekTwo.PractiseAvarage;
+package WeekTwo.Practices.PractiseAvarage;
 
 import java.util.Arrays;
 
