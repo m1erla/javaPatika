@@ -2,7 +2,7 @@ package Entrance;
 
 import java.util.Scanner;
 
-public class MinMaxValue {
+public class MinMaxValues {
     public static void main(String[] args) {
         /*** MAX MIN VALUE ***/
 
