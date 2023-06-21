@@ -1,7 +1,6 @@
 package WeekFour.AdventureGame;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Inventory {
     private boolean water;

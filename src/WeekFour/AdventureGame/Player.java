@@ -1,6 +1,5 @@
 package WeekFour.AdventureGame;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Player extends Game{
