@@ -3,6 +3,16 @@
 ## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works -- 
+### Week 4 --                                                                                                           
+- I- Home Work --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
+
+### Week 3 --                                                                                                           
+- I- Home Work --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
+- II- Home Work --> [Flight Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/FlightManagementSystem)
+- III- Home Work --> [Online Movie Systemr](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/OnlineMovieSystem)
+- IV- Home Work --> [University Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/UniversityManagementSystem)
+- V- Home Work --> [Zoo](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/Zoo)
+
 ### Week 2 --                                                                                                           
 - I- Home Work --> [Recursive Method](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/FirstHomeWork)  
 - II- Home Work --> [Recursive Pattern](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SecondHomeWork)
