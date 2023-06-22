@@ -1,4 +1,8 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Locations;
+
+import WeekFour.AdventureGame.Equipments.Helmet;
+import WeekFour.AdventureGame.Player.Player;
+import WeekFour.AdventureGame.Equipments.Weapons;
 
 public  class ToolStore extends NormalLoc{
     private String helmet;

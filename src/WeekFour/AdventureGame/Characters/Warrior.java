@@ -1,4 +1,4 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Characters;
 
 public class Warrior extends Character{
     public Warrior(){

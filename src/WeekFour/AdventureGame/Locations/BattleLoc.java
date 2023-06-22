@@ -1,4 +1,9 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Locations;
+
+import WeekFour.AdventureGame.Equipments.Helmet;
+import WeekFour.AdventureGame.Obstacles.Obstacle;
+import WeekFour.AdventureGame.Player.Player;
+import WeekFour.AdventureGame.Equipments.Weapons;
 
 import java.util.Random;
 
@@ -172,10 +177,14 @@ public abstract class BattleLoc extends Location{
             if (1 <= weaponChance && weaponChance <= 19){
                 System.out.println("You have won a Rifle!");
                 this.getPlayer().getInventory().setWeapon(Weapons.getWeaponObjById(2));
-            } else if (20 <= weaponChance && weaponChance <= 49) {
+            } else if (20 <= weaponChance && weaponChance <= 39) {
                 System.out.println("You have won a Sword!");
                 this.getPlayer().getInventory().setWeapon(Weapons.getWeaponObjById(3));
-            }else {
+            } else if (40 <= weaponChance && weaponChance <= 59) {
+                this.getPlayer().getInventory().setWeapon(Weapons.getWeaponObjById(4));
+            } else if (60 <= weaponChance && weaponChance <= 79) {
+                this.getPlayer().getInventory().setWeapon(Weapons.getWeaponObjById(5));
+            } else {
                 System.out.println("You have won a Pistol!");
                 this.getPlayer().getInventory().setWeapon(Weapons.getWeaponObjById(1));
             }

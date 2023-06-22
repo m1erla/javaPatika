@@ -1,8 +1,14 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Player;
+
+import WeekFour.AdventureGame.Game;
+import WeekFour.AdventureGame.Characters.Character;
+import WeekFour.AdventureGame.Equipments.Helmet;
+import WeekFour.AdventureGame.Equipments.Weapons;
+import WeekFour.AdventureGame.Obstacles.Obstacle;
 
 import java.util.Scanner;
 
-public class Player extends Game{
+public class Player extends Game {
     private Inventory inventory;
     private int damage;
     private int defHealth;

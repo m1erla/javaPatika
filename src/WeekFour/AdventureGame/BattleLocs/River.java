@@ -1,6 +1,10 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.BattleLocs;
 
-public class River extends BattleLoc{
+import WeekFour.AdventureGame.Player.Player;
+import WeekFour.AdventureGame.Obstacles.Zombie;
+import WeekFour.AdventureGame.Locations.BattleLoc;
+
+public class River extends BattleLoc {
     public static boolean checkLoc = false;
     public River(Player player){
         super(player, "River", new Zombie(), "Food",2);

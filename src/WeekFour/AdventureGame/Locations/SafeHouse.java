@@ -1,4 +1,6 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Locations;
+
+import WeekFour.AdventureGame.Player.Player;
 
 public  class SafeHouse extends NormalLoc{
 

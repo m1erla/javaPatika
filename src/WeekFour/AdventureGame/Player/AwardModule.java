@@ -1,4 +1,4 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Player;
 
 public class AwardModule {
     private String awardName;

@@ -1,4 +1,7 @@
-package WeekFour.AdventureGame;
+package WeekFour.AdventureGame.Player;
+
+import WeekFour.AdventureGame.Equipments.Helmet;
+import WeekFour.AdventureGame.Equipments.Weapons;
 
 import java.util.ArrayList;
 

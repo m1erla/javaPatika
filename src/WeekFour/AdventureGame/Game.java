@@ -1,5 +1,15 @@
 package WeekFour.AdventureGame;
 
+import WeekFour.AdventureGame.BattleLocs.Cave;
+import WeekFour.AdventureGame.BattleLocs.Forest;
+import WeekFour.AdventureGame.BattleLocs.Quarry;
+import WeekFour.AdventureGame.BattleLocs.River;
+import WeekFour.AdventureGame.Locations.Location;
+import WeekFour.AdventureGame.Locations.SafeHouse;
+import WeekFour.AdventureGame.Locations.ToolStore;
+import WeekFour.AdventureGame.Obstacles.Obstacle;
+import WeekFour.AdventureGame.Player.Player;
+
 import java.util.Scanner;
 
 public class Game{
