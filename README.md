@@ -4,7 +4,7 @@
 
 ## Home Works -- 
 ### Week 4 --                                                                                                           
-- I- Home Work --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
+- I- Home Work --> [Adventure Game](https://github.com/m1erla/javaPatika/tree/master/src/WeekFour/AdventureGame)  
 
 ### Week 3 --                                                                                                           
 - I- Home Work --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
