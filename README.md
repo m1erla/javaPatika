@@ -1,36 +1,42 @@
 # javaPatika - Creating Applications Using Java
 
-## You Can Find My Home Work And Practice Easily Here
+# You Can Find My Home Work And Practice Easily Here
 
 ## Home Works -- 
+### Week 5 -- 
+- I  --> [Generic List](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/GenericList)
+- II --> [Sorted Book](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/SortedBook)
+- III --> [Fixture Generator](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/FixtureGenerator)
+- IV --> [Patika Store](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/PatikaStore)  
+
 ### Week 4 --                                                                                                           
-- I- Home Work --> [Adventure Game](https://github.com/m1erla/javaPatika/tree/master/src/WeekFour/AdventureGame)  
+- I  --> [Adventure Game](https://github.com/m1erla/javaPatika/tree/master/src/WeekFour/AdventureGame)  
 
 ### Week 3 --                                                                                                           
-- I- Home Work --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
-- II- Home Work --> [Flight Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/FlightManagementSystem)
-- III- Home Work --> [Online Movie Systemr](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/OnlineMovieSystem)
-- IV- Home Work --> [University Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/UniversityManagementSystem)
-- V- Home Work --> [Zoo](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/Zoo)
+- I  --> [Elevator Simulator](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/ElevatorSimulator)  
+- II  --> [Flight Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/FlightManagementSystem)
+- III  --> [Online Movie Systemr](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/OnlineMovieSystem)
+- IV  --> [University Management System](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/UniversityManagementSystem)
+- V --> [Zoo](https://github.com/m1erla/javaPatika/tree/master/src/WeekThree/Zoo)
 
 ### Week 2 --                                                                                                           
-- I- Home Work --> [Recursive Method](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/FirstHomeWork)  
-- II- Home Work --> [Recursive Pattern](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SecondHomeWork)
-- III- Home Work --> [Recursive Prime Number](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/ThirdHomeWork)
-- IV- Home Work --> [Salary Calculator](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SalaryCalculator)
-- V- Home Work --> [Sorting the Elements of the Array](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SortArrayNumber)
-- VI- Home Work --> [Frequency of Elements in Array](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/FrequencyArray)
-- VII- Home Work --> [Transpoz Of Matrix](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/TranspozeMatrix)
+- I --> [Recursive Method](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/FirstHomeWork)  
+- II  --> [Recursive Pattern](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SecondHomeWork)
+- III  --> [Recursive Prime Number](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/ThirdHomeWork)
+- IV  --> [Salary Calculator](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SalaryCalculator)
+- V  --> [Sorting the Elements of the Array](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/SortArrayNumber)
+- VI  --> [Frequency of Elements in Array](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/FrequencyArray)
+- VII --> [Transpoz Of Matrix](https://github.com/m1erla/javaPatika/tree/master/src/WeekTwo/TranspozeMatrix)
 
 ### Week 1 --                                                                                                           
-- I- Home Work --> [Body Mass Index](https://github.com/m1erla/javaPatika/blob/master/src/Entrance/BodyMassIndex.java)  
-- II- Home Work --> [Grocery](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Grocery.java)
-- III- Home Work --> [Flight Ticket](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/FlightTicket.java)
-- IV- Home Work --> [Chinese Zodiac](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/ChineseZodiac.java)
-- V- Home Work --> [Leap Year](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/LeapYear.java)
-- VI- Home Work --> [Min Max Value](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkSixth)
-- VII- Home Work --> [Perfect Number](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkSeven)
-- VIII- Home Work --> [Inverted Triangle](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkEight)
-- IX- Home Work --> [Prime Number](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkNine)
-- X- Home Work --> [Fibonacci](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkTen)
+- I --> [Body Mass Index](https://github.com/m1erla/javaPatika/blob/master/src/Entrance/BodyMassIndex.java)  
+- II --> [Grocery](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/Grocery.java)
+- III --> [Flight Ticket](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/FlightTicket.java)
+- IV --> [Chinese Zodiac](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/ChineseZodiac.java)
+- V --> [Leap Year](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/LeapYear.java)
+- VI --> [Min Max Value](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkSixth)
+- VII --> [Perfect Number](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkSeven)
+- VIII --> [Inverted Triangle](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkEight)
+- IX --> [Prime Number](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkNine)
+- X --> [Fibonacci](https://github.com/m1erla/javaPatika/tree/master/src/Entrance/HomeWorkTen)
 
