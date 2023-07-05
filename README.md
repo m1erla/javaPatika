@@ -1,6 +1,6 @@
 # javaPatika - Creating Applications Using Java
 
-# You Can Find My Home Work And Practice Easily Here
+## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works -- 
 ### Week 5 -- 
