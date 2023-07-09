@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ThreadNumber implements Runnable{
-    public static List<Integer> evenNumber = new ArrayList<>();
-    public static List<Integer> oddNumber = new ArrayList<>();
+    private static List<Integer> evenNumber = new ArrayList<>();
+    private static List<Integer> oddNumber = new ArrayList<>();
 
     private static List<Integer> thread1 = new ArrayList<>();
     private static List<Integer> thread2 = new ArrayList<>();
