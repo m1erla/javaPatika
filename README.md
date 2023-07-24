@@ -3,6 +3,12 @@
 ## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works -- 
+### Week 6 -- 
+- I  --> [List Book](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/ListBook)
+- II --> [Thread](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/Thread)
+- III --> [Patika Clone](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/com/patikadev)
+
+
 ### Week 5 -- 
 - I  --> [Generic List](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/GenericList)
 - II --> [Sorted Book](https://github.com/m1erla/javaPatika/tree/master/src/WeekFive/SortedBook)
