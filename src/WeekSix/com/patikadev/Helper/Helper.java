@@ -37,7 +37,7 @@ public class Helper {
 
         switch (str){
             case "fill":
-                msg = "Please fill-up to all spaces";
+                msg = "Please fill up to all spaces";
                 title = "Error!";
                 break;
             case "success":
@@ -69,5 +69,8 @@ public class Helper {
 
     public static boolean isFieldEmpty(JTextField field){
         return field.getText().trim().isEmpty();
+    }
+    public static boolean isAreaEmpty(JTextArea area){
+        return area.getText().trim().isEmpty();
     }
 }

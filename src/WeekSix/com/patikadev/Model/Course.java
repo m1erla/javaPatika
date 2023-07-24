@@ -145,4 +145,19 @@ public class Course {
         }
         return courseList;
     }
+    public static int getCourseID(String name){
+        String query = "SELECT id FROM course WHERE name = ?";
+        int id = 0;
+        try {
+            PreparedStatement pr = DBConnector.getInstance().prepareStatement(query);
+            pr.setString(1,name);
+            ResultSet rs = pr.executeQuery();
+            while (rs.next()){
+                id = rs.getInt("id");
+            }
+        }catch (SQLException ex){
+            System.out.println(ex.getMessage());
+        }
+        return id;
+    }
 }

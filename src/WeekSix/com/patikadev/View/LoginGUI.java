@@ -2,9 +2,7 @@ package WeekSix.com.patikadev.View;
 
 import WeekSix.com.patikadev.Helper.Config;
 import WeekSix.com.patikadev.Helper.Helper;
-import WeekSix.com.patikadev.Model.Controller;
-import WeekSix.com.patikadev.Model.Operator;
-import WeekSix.com.patikadev.Model.User;
+import WeekSix.com.patikadev.Model.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -17,10 +15,11 @@ public class LoginGUI extends JFrame{
     private JPanel wbottom;
     private JPasswordField txt_password_login;
     private JButton btn_login;
+    private JButton signInButton;
 
     public LoginGUI(){
         add(wrapper);
-        setSize(400,400);
+        setSize(600,600);
         setLocation(Helper.screenSize("x", getSize()), Helper.screenSize("y", getSize()));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setTitle(Config.PROJECT_TITLE);
@@ -30,13 +29,13 @@ public class LoginGUI extends JFrame{
             if (Helper.isFieldEmpty(txt_user_login) || Helper.isFieldEmpty(txt_password_login)){
                 Helper.showMsg("fill");
             }else {
-                User u =(Operator) User.getFetch(txt_user_login.getText(), txt_password_login.getText());
-                if (u == null){
+                User user =User.getFetch(txt_user_login.getText(), txt_password_login.getText());
+                if (user == null){
                     Helper.showMsg("User Has Not Been Found");
                 }else {
-                switch (u.getTypee()){
+                switch (user.getTypee()){
                     case "operator":
-                        OperatorGUI op = new OperatorGUI((Operator) u);
+                        OperatorGUI op = new OperatorGUI((Operator) user);
                         break;
                     case "educator":
                         EducatorGUI ed = new EducatorGUI();
@@ -48,6 +47,10 @@ public class LoginGUI extends JFrame{
                 dispose();
                 }
             }
+        });
+        signInButton.addActionListener(e -> {
+            SignGUI sign = new SignGUI();
+
         });
     }
 

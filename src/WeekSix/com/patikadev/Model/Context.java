@@ -1,7 +1,8 @@
-package WeekSix.com.patikadev.View;
+package WeekSix.com.patikadev.Model;
 
-import WeekSix.com.patikadev.Helper.*;
-import WeekSix.com.patikadev.Model.*;
+import WeekSix.com.patikadev.Helper.Config;
+import WeekSix.com.patikadev.Helper.Helper;
+import WeekSix.com.patikadev.View.UpdatePatikaGUI;
 
 import javax.swing.*;
 import javax.swing.event.TableModelEvent;
@@ -9,10 +10,8 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
-
-
-public class OperatorGUI extends JFrame {
-//    // Defined Attributes
+public class Context extends JFrame{
+    // Defined Attributes
 
     private JPanel wrapper;
     private JTabbedPane tab_patika;
@@ -21,12 +20,12 @@ public class OperatorGUI extends JFrame {
     private JButton btn_logout;
     private JPanel pnl_user_list;
     private JScrollPane scrl_user_list;
-    private final Operator operator;
+    private  Operator operator;
     private  DefaultTableModel mdl_user_list;
     private DefaultTableModel mdl_patika_list;
 
     private Object[] row_patika_list;
-    private  Object[] row_user_list;
+    private static Object[] row_user_list;
     private  JTable tbl_user_list;
     private JPanel pnl_user;
     private JLabel lbl_name;
@@ -68,7 +67,7 @@ public class OperatorGUI extends JFrame {
     private Object[] row_course_list;
 
     // Created Constructor
-    public OperatorGUI(Operator operator){
+    public void OperatorGUI(Operator operator){
         this.operator = operator;
         add(wrapper);
         setSize(1000,1000);
@@ -113,13 +112,11 @@ public class OperatorGUI extends JFrame {
                 String user_name = tbl_user_list.getValueAt(tbl_user_list.getSelectedRow(),2).toString();
                 String user_password = tbl_user_list.getValueAt(tbl_user_list.getSelectedRow(),3).toString();
                 String user_type = tbl_user_list.getValueAt(tbl_user_list.getSelectedRow(),4).toString();
-                if (User.update(user_id, name, user_name, user_password , user_type)){
+                if (Controller.update(user_id, name, user_name, user_password , user_type)){
                     Helper.showMsg("success");
-
+                    loadUserModel();
                 }
                 loadUserModel();
-                loadEducatorCombo();
-                loadCourseModel();
             }
         });
         // ##
@@ -136,10 +133,6 @@ public class OperatorGUI extends JFrame {
                 @Override
                 public void windowClosed(WindowEvent e) {
                     loadPatikaModel();
-                    loadPatikaCombo();
-                    loadEducatorCombo();
-                    loadCourseModel();
-
                 }
             });
         });
@@ -151,10 +144,6 @@ public class OperatorGUI extends JFrame {
                 }else{
                     Helper.showMsg("success");
                     loadPatikaModel();
-                    loadPatikaCombo();
-                    loadEducatorCombo();
-                    loadCourseModel();
-
                 }
             }
         });
@@ -175,6 +164,7 @@ public class OperatorGUI extends JFrame {
                 tbl_patika_list.setRowSelectionInterval(selected_row,selected_row);
             }
         });
+
         // ##
         // Model Course List
         mdl_course_list = new DefaultTableModel();
@@ -184,48 +174,42 @@ public class OperatorGUI extends JFrame {
         tbl_course_list.setModel(mdl_course_list);
         tbl_course_list.getColumnModel().getColumn(0).setMaxWidth(100);
         tbl_course_list.getTableHeader().setReorderingAllowed(false);
-        loadPatikaModel();
-        loadEducatorCombo();
-
+        loadCourseList();
         // ##
         btn_user_add.addActionListener(e -> {
-                if (Helper.isFieldEmpty(txt_name) || Helper.isFieldEmpty(txt_user_name) || Helper.isFieldEmpty(txt_password)){
-                 Helper.showMsg("fill");
-                }else {
-                    String name = txt_name.getText();
-                    String userName = txt_user_name.getText();
-                    String password = txt_password.getText();
-                    String type = cbx_type.getSelectedItem().toString();
-                    if (User.add(name, userName, password, type)){
-                        Helper.showMsg("success");
-                        loadUserModel();
-                        loadEducatorCombo();
-                        txt_name.setText(null);
-                        txt_user_name.setText(null);
-                        txt_password.setText(null);
-                    }
+            if (Helper.isFieldEmpty(txt_name) || Helper.isFieldEmpty(txt_user_name) || Helper.isFieldEmpty(txt_password)){
+                Helper.showMsg("fill");
+            }else {
+                String name = txt_name.getText();
+                String userName = txt_user_name.getText();
+                String password = txt_password.getText();
+                String type = cbx_type.getSelectedItem().toString();
+                if (Controller.add(name, userName, password, type)){
+                    Helper.showMsg("success");
+                    loadUserModel();
+                    txt_name.setText(null);
+                    txt_user_name.setText(null);
+                    txt_password.setText(null);
                 }
+            }
         });
 
         btn_delete.addActionListener(a -> {
-                if (Helper.isFieldEmpty(txt_user_id)){
-                    Helper.showMsg("fill");
-                }else {
-                   if (Helper.confrim("sure")){
-                       int user_id = Integer.parseInt(txt_user_id.getText());
-                       if (User.deleteUser(user_id)){
+            if (Helper.isFieldEmpty(txt_user_id)){
+                Helper.showMsg("fill");
+            }else {
+                if (Helper.confrim("sure")){
+                    int user_id = Integer.parseInt(txt_user_id.getText());
+                    if (Controller.deleteUser(user_id)){
 
-                           Helper.showMsg("error");
+                        Helper.showMsg("error");
 
-                       }else {
-                           Helper.showMsg("success");
-                           loadUserModel();
-                           loadEducatorCombo();
-                           loadCourseModel();
-                           txt_user_id.setText(null);
-                       }
-                   }
+                    }else {
+                        Helper.showMsg("success");
+                        loadUserModel();
+                    }
                 }
+            }
         });
         btn_search.addActionListener(e -> {
             String name = txt_search_name.getText();
@@ -233,14 +217,10 @@ public class OperatorGUI extends JFrame {
             String type = cbx_search_type.getSelectedItem().toString();
             String query = Controller.searchQuery(name, userName, type);
             loadUserModel(Controller.searchUserList(query));
-            txt_search_name.setText(null);
-            txt_search_user_name.setText(null);
 
         });
         btn_logout.addActionListener(e -> {
             dispose();
-            LoginGUI log = new LoginGUI();
-
         });
 
         btn_patika_add.addActionListener(e -> {
@@ -249,53 +229,33 @@ public class OperatorGUI extends JFrame {
             }else {
                 if (Patika.addPatika(txt_patika_name.getText())){
                     Helper.showMsg("success");
-                    loadPatikaModel();
-                    loadPatikaCombo();
-                    loadEducatorCombo();
                     txt_patika_name.setText(null);
                 }else {
                     Helper.showMsg("error");
                 }
+                loadPatikaModel();
 
-
-
-            }
-        });
-        btn_course_add.addActionListener(e -> {
-            Item patikaItem = (Item) cbx_course_patika.getSelectedItem();
-            Item userItem = (Item) cbx_course_educator.getSelectedItem();
-            if (Helper.isFieldEmpty(txt_course_name) || Helper.isFieldEmpty(txt_course_lang)){
-                Helper.showMsg("fill");
-            }else{
-                if (Course.addCourse(userItem.getKey(), patikaItem.getKey(), txt_course_name.getText(), txt_course_lang.getText())){
-                    Helper.showMsg("success");
-                    loadCourseModel();
-                    txt_course_lang.setText(null);
-                    txt_course_name.setText(null);
-                }else {
-                    Helper.showMsg("error");
-                }
             }
         });
     }
     // Created Methods
     private void loadPatikaModel() {
-         DefaultTableModel cleanModel = (DefaultTableModel) tbl_patika_list.getModel();
-         cleanModel.setRowCount(0);
-         int i;
-         for (Patika obj : Patika.getPatikaList()){
-             i = 0;
-             row_patika_list[i++] = obj.getId();
-             row_patika_list[i++] = obj.getName();
-             mdl_patika_list.addRow(row_patika_list);
-         }
+        DefaultTableModel cleanModel = (DefaultTableModel) tbl_patika_list.getModel();
+        cleanModel.setRowCount(0);
+        int i;
+        for (Patika obj : Patika.getPatikaList()){
+            i = 0;
+            row_patika_list[i++] = obj.getId();
+            row_patika_list[i++] = obj.getName();
+            mdl_patika_list.addRow(row_patika_list);
+        }
     }
 
     public void loadUserModel(){
         DefaultTableModel clearModel = (DefaultTableModel) tbl_user_list.getModel();
         clearModel.setRowCount(0);
         int i;
-        for (User obj : User.getUserList()){
+        for (User obj : Controller.getUserList()){
             i = 0;
             row_user_list[i++] = obj.getId();
             row_user_list[i++] = obj.getName();
@@ -310,7 +270,7 @@ public class OperatorGUI extends JFrame {
     public void loadUserModel(ArrayList<User> list){
         DefaultTableModel clearModel = (DefaultTableModel) tbl_user_list.getModel();
         clearModel.setRowCount(0);
-        for (User obj : list){
+        for (User obj : Controller.getUserList()){
             int i = 0;
             row_user_list[i++] = obj.getId();
             row_user_list[i++] = obj.getName();
@@ -321,10 +281,10 @@ public class OperatorGUI extends JFrame {
             mdl_user_list.addRow(row_user_list);
         }
     }
-    public void loadCourseModel(){
+    public void loadCourseList(){
         DefaultTableModel clearModel = (DefaultTableModel) tbl_course_list.getModel();
         clearModel.setRowCount(0);
-        int i;
+        int i = 0;
         for (Course obj : Course.getCourseList()){
             i = 0;
             row_course_list[i++] = obj.getId();
@@ -334,26 +294,6 @@ public class OperatorGUI extends JFrame {
             row_course_list[i++] = obj.getEducator().getName();
             mdl_course_list.addRow(row_course_list);
         }
-
-    }
-    public void loadPatikaCombo(){
-        cbx_course_patika.removeAllItems();
-        for (Patika obj : Patika.getPatikaList()){
-            cbx_course_patika.addItem(new Item(obj.getId(),obj.getName()));
-        }
-
-    }
-    public void loadEducatorCombo(){
-        cbx_course_educator.removeAllItems();
-        for (User obj : Controller.getOnlyEducator()){
-                cbx_course_educator.addItem(new Item(obj.getId(),obj.getName()));
-        }
-    }
-    public static void main(String[] args) {
-        Helper.setLayout();
-        Operator operator1  = new Operator();
-        DBConnector.getInstance();
-        OperatorGUI operatorGUI = new OperatorGUI(operator1);
 
     }
 }
