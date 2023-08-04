@@ -3,6 +3,11 @@
 ## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works -- 
+### Week 7 -- 
+- I  --> [Spring Framework](https://github.com/m1erla/SpringFrameWork)
+- II --> [Spring Boot](https://github.com/m1erla/PatikaSpringBoot)
+
+
 ### Week 6 -- 
 - I  --> [List Book](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/ListBook)
 - II --> [Thread](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/Thread)
