@@ -2,7 +2,38 @@
 
 ## You Can Find My Home Work And Practice Easily Here
 
-## Home Works -- 
+## Home Works --
+### Week 12 -- 
+- I  --> [Personel Page](https://github.com/m1erla/CssProject)
+- II --> [Instagram Clone](https://github.com/m1erla/bootstarp-demo)
+- III --> [Linkedin Clone](https://github.com/m1erla/Bootstrap-linkedln)
+
+
+### Week 11 -- 
+- I  --> [First HTML Web](https://github.com/m1erla/HTML)
+- II --> [Google Home Page 1](https://github.com/m1erla/HTML/tree/main/Home-work)
+- III --> [Google Home Page 2](https://github.com/m1erla/HTML/tree/main/Updated-Google)
+
+
+### Week 10 -- 
+
+
+
+### Week 9 -- 
+- I  --> [First Repo](https://github.com/m1erla/kodluyoruzilkrepo)
+- II --> [Selection Sort](https://github.com/m1erla/Project-First/blob/main/Project-First.md)
+- III --> [Merge Sort](https://github.com/m1erla/Project-First/blob/main/Project-Second.md)
+- IV --> [Binary-Search-Tree](https://github.com/m1erla/Project-First/blob/main/Project-Third.md)
+
+
+### Week 8 -- 
+- II --> [Spring Boot](https://github.com/m1erla/PatikaSpringBoot)
+
+
+### Week 7 -- 
+- I  --> [Spring Framework](https://github.com/m1erla/SpringFrameWork)
+  
+
 ### Week 6 -- 
 - I  --> [List Book](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/ListBook)
 - II --> [Thread](https://github.com/m1erla/javaPatika/tree/master/src/WeekSix/Thread)
