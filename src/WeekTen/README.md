@@ -19,3 +19,11 @@
 2. SELECT country FROM public.country WHERE country LIKE '______%n';
 3. SELECT title FROM public.film WHERE title ILIKE '%T____'; -- '!--*' == NOT ILIKE or '--*' == ILIKE or '--' == LIKE
 4. SELECT * FROM public.film WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
+
+
+### Homework 4
+1. SELECT DISTINCT replacement_cost FROM public.film;
+2. SELECT COUNT(DISTINCT replacement_cost) FROM public.film;
+3. SELECT COUNT(title) FROM public.film WHERE title LIKE 'T%' AND rating = 'G';
+4. SELECT COUNT(country) FROM public.country WHERE country LIKE '_____';
+5. SELECT COUNT(city) FROM public.city WHERE city ILIKE '%r' ;
