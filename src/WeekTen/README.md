@@ -26,4 +26,9 @@
 2. SELECT COUNT(DISTINCT replacement_cost) FROM public.film;
 3. SELECT COUNT(title) FROM public.film WHERE title LIKE 'T%' AND rating = 'G';
 4. SELECT COUNT(country) FROM public.country WHERE country LIKE '_____';
-5. SELECT COUNT(city) FROM public.city WHERE city ILIKE '%r' ;
+
+
+### Homework 5
+1. SELECT title, length FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
+2. SELECT title, length FROM film WHERE title LIKE '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
+3. SELECT last_name, store_id FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
