@@ -1,3 +1,6 @@
+![Patika]("C:\Users\furka\Documents\campjavafullstack\javabackend\Java-Patika\javaPatika\src\patika-dev.png")
+
+
 # SQL Lesson
 
 ### Homework 1 WHERE and Comparison and Logical Operators
