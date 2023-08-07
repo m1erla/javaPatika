@@ -1,4 +1,4 @@
-![Patika]("C:\Users\furka\Documents\campjavafullstack\javabackend\Java-Patika\javaPatika\src\patika-dev.png")
+![Patika](https://github.com/m1erla/javaPatika/blob/de6ecc4983fb627feccd58c9d2a34f9ad954e888/src/patika-dev2.png)
 
 
 # SQL Lesson
