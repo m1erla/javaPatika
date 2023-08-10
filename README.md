@@ -16,7 +16,7 @@
 
 
 ### Week 10 -- 
-
+- I --> [SQL](https://github.com/m1erla/javaPatika/tree/master/src/WeekTen)
 
 
 ### Week 9 -- 
