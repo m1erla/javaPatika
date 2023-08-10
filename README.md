@@ -3,6 +3,12 @@
 ## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works --
+### Week 13 -- 
+- I  --> [JavaScript Time](https://github.com/m1erla/javaPatika/tree/master/src/WeekThirteen/jstime)
+- II --> []()
+- III --> []()
+
+
 ### Week 12 -- 
 - I  --> [Personel Page](https://github.com/m1erla/CssProject)
 - II --> [Instagram Clone](https://github.com/m1erla/bootstarp-demo)
