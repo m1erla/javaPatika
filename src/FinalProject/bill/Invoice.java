@@ -1,4 +1,4 @@
-package FinalProject;
+package FinalProject.bill;
 
 import java.util.Date;
 
@@ -6,6 +6,9 @@ public class Invoice {
     private int invoiceType;
     private double amount;
     private String processDate;
+    public Invoice(){
+
+    }
 
     public Invoice(int invoiceType, double amount, String processDate){
         this.invoiceType = invoiceType;
