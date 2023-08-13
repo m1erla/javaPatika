@@ -1,22 +1,28 @@
-package FinalProject;
+package FinalProject.account;
 
 
 
 public class MemberAccount {
+    private MemberAccount memberAccount;
     private String id;
     private String name;
     private String surname;
     private String memberCode;
     private double balance;
+    public MemberAccount(){
 
-    public MemberAccount(String id, String name,String surname, double balance){
+    }
+
+    public MemberAccount(String id, String name,String surname, String memberCode, double balance){
         this.id = id;
         this.name = name;
         this.surname = surname;
-        this.memberCode = id + name.substring(0,2).toUpperCase();
+        this.memberCode = memberCode;
         this.balance= balance;
     }
-
+   public MemberAccount getMemberAccount(){
+        return memberAccount;
+   }
     public String getId() {
         return id;
     }
@@ -34,7 +40,7 @@ public class MemberAccount {
     }
 
     public String getMemberCode() {
-        return memberCode;
+        return this.memberCode = memberCode;
     }
 
     public void setMemberCode(String memberCode) {

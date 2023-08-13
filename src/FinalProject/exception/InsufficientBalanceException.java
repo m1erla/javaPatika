@@ -1,4 +1,4 @@
-package FinalProject;
+package FinalProject.exception;
 
 public class InsufficientBalanceException  extends Exception{
     public InsufficientBalanceException (String message){

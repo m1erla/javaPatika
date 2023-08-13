@@ -1,9 +1,13 @@
-package FinalProject;
+package FinalProject.services;
+
+import FinalProject.account.MemberAccount;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MemberAccountService {
+public class MemberAccountService{
+private MemberAccount memberAccount;
+
 //    private static List<MemberAccount> memberAccounts;
 //
 //    public  MemberAccountService(){
@@ -44,16 +48,21 @@ public class MemberAccountService {
 //    }
 
 
-        private List<MemberAccount> memberAccounts;
+        private static List<MemberAccount> memberAccounts;
 
-        public MemberAccountService() {
+        public MemberAccountService(MemberAccount memberAccount) {
             memberAccounts = new ArrayList<>();
+            this.memberAccount = memberAccount;
+            defaultMemberAccounts();
         }
 
         // Create a new member account
-        public void createMemberAccount(String id, String name, String surname, double balance) {
-            MemberAccount newMember = new MemberAccount(id, name, surname, balance);
+        public void createMemberAccount(String id, String name, String surname,String memberCode ,double balance) {
+            System.out.println("-".repeat(20) + "Welcome to the create member account service!" + "-".repeat(20));
+
+            MemberAccount newMember = new MemberAccount(id, name, surname, memberCode, balance);
             memberAccounts.add(newMember);
+            System.out.println("New Member Account added!");
         }
 
         // Read member account by member code
@@ -67,12 +76,16 @@ public class MemberAccountService {
         }
 
         // Update member account balance
-        public void updateMemberAccountBalance(String memberCode, double newBalance) {
-            MemberAccount account = getMemberAccountByCode(memberCode);
+        public void updateMemberAccountBalance(MemberAccount updateMemberAccount) {
+            MemberAccount account = getMemberAccountByCode(updateMemberAccount.getMemberCode());
             if (account != null) {
-                account.setBalance(newBalance);
+                account.setId(updateMemberAccount.getId());
+                account.setName(updateMemberAccount.getName());
+                account.setSurname(updateMemberAccount.getSurname());
+                account.setBalance(updateMemberAccount.getBalance());
+                System.out.println("Member account has been updated!");
             } else {
-                System.out.println("Member account not found for the given member code.");
+                System.out.println("Member account not found.");
             }
         }
 
@@ -85,4 +98,21 @@ public class MemberAccountService {
                 System.out.println("Member account not found for the given member code.");
             }
         }
+    public static MemberAccount findMemberAccountByCode(String memberCode){
+        // Assuming this is a valid member code
+        MemberAccount memberAccount = new MemberAccount();
+        memberAccount.getMemberCode();
+        String memberCode1 = memberAccount.getId() + memberAccount.getMemberCode();
+        for (MemberAccount account : memberAccounts){
+            if (account.getMemberCode().equals(memberCode1)){
+                return account;
+            }
+        }
+        return null;
+    }
+  private void defaultMemberAccounts(){
+      memberAccounts.add(new MemberAccount("123", "John", "Doe", "123Jo",1000));
+      memberAccounts.add(new MemberAccount("456", "Jane", "Smith", "456Ja",1500));
+      memberAccounts.add(new MemberAccount("321","Emma","Stone","321Em",3500));
+  }
 }
