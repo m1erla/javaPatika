@@ -5,8 +5,8 @@
 ## Home Works --
 ### Week 13 -- 
 - I  --> [JavaScript Time](https://github.com/m1erla/javaPatika/tree/master/src/WeekThirteen/jstime)
-- II --> []()
-- III --> []()
+- II --> [JavaScript To Do List](https://github.com/m1erla/javaPatika/tree/master/src/WeekThirteen/jslist)
+- III --> [Asian Kitchen's Menu](https://github.com/m1erla/javaPatika/tree/master/src/WeekThirteen/asianmenu)
 
 
 ### Week 12 -- 
