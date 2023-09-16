@@ -1,8 +1,8 @@
-# javaPatika - Creating Applications Using Java
+# javaPatika Bootcamp - Creating Applications Using Java
 
-## You Can Find My Home Work And Practice Easily Here
+## You Can Easily Access My Projects and Practice Here
 
-## Home Works --
+## Projects --
 ### Week 18 -- 
 - I  --> [Note app](https://github.com/m1erla/nodes-app)
          
