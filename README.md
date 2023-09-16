@@ -3,6 +3,10 @@
 ## You Can Find My Home Work And Practice Easily Here
 
 ## Home Works --
+### Week 18 -- 
+- I  --> [Note app](https://github.com/m1erla/nodes-app)
+         
+
 ### Week 17 -- 
 - I  --> [E-commerce Web site](https://github.com/m1erla/e-commerce)
 
