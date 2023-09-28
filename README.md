@@ -3,6 +3,10 @@
 ## You Can Easily Access My Projects and Practice Here
 
 ## Projects --
+### Week 19 --
+- I --> [Bill Gates's Money](https://github.com/m1erla/reactPatika/tree/main/React-Lessons/bill-gates-money)
+
+
 ### Week 18 -- 
 - I  --> [Note app](https://github.com/m1erla/nodes-app)
          
