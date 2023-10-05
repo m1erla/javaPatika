@@ -3,6 +3,12 @@
 ## You Can Easily Access My Projects and Practice Here
 
 ## Projects --
+### Week 20 --
+- I --> [Markdown Previewer](https://github.com/m1erla/reactPatika/tree/main/React-Lessons/markdown)
+- II --> [Covid-19 Tracker](https://github.com/m1erla/reactPatika/tree/main/React-Lessons/covid-tracker)
+- III --> [Weather-App](https://github.com/m1erla/reactPatika/tree/main/React-Lessons/redux-weather-app)
+
+
 ### Week 19 --
 - I --> [Bill Gates's Money](https://github.com/m1erla/reactPatika/tree/main/React-Lessons/bill-gates-money)
 
